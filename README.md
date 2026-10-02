@@ -81,6 +81,8 @@ Users can:
 
 The selected product is also visually highlighted after navigation to make it easier to identify.
 
+<img width="927" height="306" alt="image" src="https://github.com/user-attachments/assets/ebbe1ca6-315b-4130-8674-91f85289f057" />
+
 ---
 
 ### 🛒 Shopping Cart & Checkout
