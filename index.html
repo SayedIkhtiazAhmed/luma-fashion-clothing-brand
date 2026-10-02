@@ -1,0 +1,2014 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fashion Clothing</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Page Loader -->
+    <div id="pageLoader">
+      <div class="loader-content">
+        <div class="loader-logo">LUMA</div>
+        <div class="loader-line">
+          <span></span>
+        </div>
+        <p>LOADING...</p>
+      </div>
+    </div>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+      <!-- ================= NAVBAR ================= -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <!-- Logo -->
+          <a href="#" class="navbar-brand">
+            <img
+              src="images/logo Image Sep 26, 2026, 04_48_54 AM.png"
+              alt="Fashion Clothing Logo"
+              class="logo"
+            />
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#men">MEN</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#men">WOMEN</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#newseason">NEW ARRIVALS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#men">SALE</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right Side Icons -->
+          <!-- Search -->
+          <div class="search-icon">
+            <a href="#" id="openSearch" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+          <!-- Right Side Icons -->
+          <div class="cart-icon">
+            <a
+              href="#"
+              aria-label="Shopping Cart"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#cartOffcanvas"
+              aria-controls="cartOffcanvas"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-count" id="cartCount">0</span>
+            </a>
+
+            <div class="account-dropdown">
+              <a href="#" class="account-icon" aria-label="User Account">
+                <i class="fa-solid fa-user"></i>
+                <span class="wishlist-count" id="wishlistCount">0</span>
+              </a>
+
+              <div class="account-menu">
+                <div class="account-menu-header">
+                  <span>WELCOME TO LUMA</span>
+                  <h4>My Account</h4>
+                </div>
+
+                <a href="#" class="account-menu-item open-account-modal">
+                  <i class="fa-regular fa-user"></i>
+                  <span>My Account</span>
+                </a>
+
+                <a
+                  href="#"
+                  class="account-menu-item open-orders-modal"
+                  id="openOrdersModal"
+                >
+                  <i class="fa-solid fa-box"></i>
+                  <span>My Orders</span>
+                </a>
+
+                <a href="#" class="account-menu-item">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>Wishlist</span>
+                </a>
+
+                <a href="#" class="account-menu-item" id="openSettings">
+                  <i class="fa-solid fa-gear"></i>
+                  <span>Settings</span>
+                </a>
+
+                <div class="account-menu-divider"></div>
+
+                <div class="account-auth-action">
+                  <a href="#" class="account-login" id="openAuthModal">
+                    LOGIN / SIGN UP
+                    <span>→</span>
+                  </a>
+
+                  <a
+                    href="#"
+                    class="account-login account-logout"
+                    id="logoutAccount"
+                  >
+                    LOGOUT
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ================= SEARCH OVERLAY ================= -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="search-box">
+        <button
+          type="button"
+          class="search-close"
+          id="closeSearch"
+          aria-label="Close Search"
+        >
+          ×
+        </button>
+
+        <div class="search-input-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+      <!-- Hero Banner Start -->
+      <section class="hero-section reveal-section">
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+          data-bs-interval="4000"
+        >
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div
+                class="hero-slide"
+                style="
+                  background-image: url(&quot;images/Image\ Sep\ 26\,\ 2026\,\ 04_37_31\ AM.png&quot;);
+                "
+              >
+                <div class="hero-content">
+                  <span class="hero-small-text">FASHION FOR EVERYONE</span>
+
+                  <h1>
+                    ELEVATE YOUR<br />
+                    EVERYDAY STYLE
+                  </h1>
+
+                  <p>Modern essentials designed for you</p>
+                  <a
+                    href="#men"
+                    class="hero-btn"
+                    onclick="
+                      document
+                        .getElementById('men')
+                        .scrollIntoView({ behavior: 'smooth' });
+                      return false;
+                    "
+                  >
+                    SHOP COLLECTION
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div
+                class="hero-slide"
+                style="
+                  background-image: url(&quot;images/Image\ Sep\ 26\,\ 2026\,\ 04_40_08\ AM.png&quot;);
+                "
+              >
+                <div class="hero-content">
+                  <span class="hero-small-text">TIMELESS FASHION</span>
+
+                  <h1>
+                    DISCOVER YOUR<br />
+                    SIGNATURE STYLE
+                  </h1>
+
+                  <p>Designed for modern everyday living</p>
+
+                  <a
+                    href="#men"
+                    class="hero-btn"
+                    onclick="
+                      document
+                        .getElementById('men')
+                        .scrollIntoView({ behavior: 'smooth' });
+                      return false;
+                    "
+                  >
+                    EXPLORE COLLECTION
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <div
+                class="hero-slide"
+                style="
+                  background-image: url(&quot;images/Image\ Sep\ 26\,\ 2026\,\ 04_40_59\ AM.png&quot;);
+                "
+              >
+                <div class="hero-content">
+                  <span class="hero-small-text">NEW SEASON</span>
+
+                  <h1>
+                    STYLE THAT<br />
+                    SPEAKS FOR YOU
+                  </h1>
+
+                  <p>Fresh looks for every occasion</p>
+
+                  <a
+                    href="#men"
+                    class="hero-btn"
+                    onclick="
+                      document
+                        .getElementById('men')
+                        .scrollIntoView({ behavior: 'smooth' });
+                      return false;
+                    "
+                  >
+                    SHOP NOW
+                    <span>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Previous Button -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <!-- Next Button -->
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#heroCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="1"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#heroCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Banner End -->
+
+      <!-- Shop By Category Start -->
+      <section id="men" class="category-section reveal-section">
+        <div class="container">
+          <!-- Section Title -->
+          <div class="category-title">
+            <span></span>
+            <h2>SHOP BY CATEGORY</h2>
+            <span></span>
+          </div>
+
+          <!-- Category Cards -->
+          <div class="row g-2">
+            <!-- Men -->
+            <div class="col-12 col-md-4">
+              <a href="#" class="category-card">
+                <img
+                  src="images/Image Sep 26, 2026, 04_40_08 AM.png"
+                  class="img-fluid"
+                  alt="Men"
+                />
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                  <h3>MEN</h3>
+                  <span>→</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Women -->
+            <div class="col-12 col-md-4">
+              <a href="#women" class="category-card">
+                <img
+                  src="images/Image Sep 26, 2026, 04_44_09 AM.png"
+                  class="img-fluid"
+                  alt="Women"
+                />
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                  <h3>WOMEN</h3>
+                  <span>→</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Accessories -->
+            <div class="col-12 col-md-4">
+              <a href="#" class="category-card">
+                <img
+                  src="images/pexels-laarkstudio-30975839.jpg"
+                  class="img-fluid"
+                  alt="Accessories"
+                />
+
+                <div class="category-overlay"></div>
+
+                <div class="category-content">
+                  <h3>ACCESSORIES</h3>
+                  <span>→</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Shop By Category End -->
+      <!-- Trending Now Start -->
+      <!-- Trending Now Start -->
+      <section id="trendingnow" class="trending-section reveal-section">
+        <div class="container">
+          <!-- Section Title -->
+          <div class="trending-title">
+            <span></span>
+            <h2>TRENDING NOW</h2>
+            <span></span>
+          </div>
+
+          <!-- Products -->
+          <div class="row g-3">
+            <!-- Dress -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="images/pexels-themangoeatingguru-33435701.jpg"
+                    class="img-fluid"
+                    alt="Dress"
+                  />
+
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    class="wishlist-btn"
+                    data-name="Dress"
+                    data-price="49"
+                    data-image="images/pexels-themangoeatingguru-33435701.jpg"
+                    aria-label="Add Dress to wishlist"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="product-info">
+                  <h3>Dress</h3>
+
+                  <p>$49</p>
+
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-name="Dress"
+                    data-price="49"
+                    data-image="images/pexels-themangoeatingguru-33435701.jpg"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shirt -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="images/pexels-cottonbro-6636606.jpg"
+                    class="img-fluid"
+                    alt="Shirt"
+                  />
+
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    class="wishlist-btn"
+                    data-name="Shirt"
+                    data-price="39"
+                    data-image="images/pexels-cottonbro-6636606.jpg"
+                    aria-label="Add Shirt to wishlist"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="product-info">
+                  <h3>Shirt</h3>
+
+                  <p>$39</p>
+
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-name="Shirt"
+                    data-price="39"
+                    data-image="images/pexels-cottonbro-6636606.jpg"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jacket -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="images/pexels-yunustug-30805112.jpg"
+                    class="img-fluid"
+                    alt="Jacket"
+                  />
+
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    class="wishlist-btn"
+                    data-name="Jacket"
+                    data-price="79"
+                    data-image="images/pexels-yunustug-30805112.jpg"
+                    aria-label="Add Jacket to wishlist"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="product-info">
+                  <h3>Jacket</h3>
+
+                  <p>$79</p>
+
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-name="Jacket"
+                    data-price="79"
+                    data-image="images/pexels-yunustug-30805112.jpg"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bag -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="product-card">
+                <div class="product-image">
+                  <img
+                    src="images/pexels-fernanda-simoes-206549222-13525167.jpg"
+                    class="img-fluid"
+                    alt="Bag"
+                  />
+
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    class="wishlist-btn"
+                    data-name="Bag"
+                    data-price="35"
+                    data-image="images/pexels-fernanda-simoes-206549222-13525167.jpg"
+                    aria-label="Add Bag to wishlist"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                  </button>
+                </div>
+
+                <div class="product-info">
+                  <h3>Bag</h3>
+
+                  <p>$35</p>
+
+                  <button
+                    type="button"
+                    class="add-to-cart"
+                    data-name="Bag"
+                    data-price="35"
+                    data-image="images/pexels-fernanda-simoes-206549222-13525167.jpg"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trending Now End -->
+      <!-- Trending Now End -->
+      <!-- New Season Carousel Start -->
+      <section id="newseason" class="new-season-section reveal-section">
+        <div class="container-fluid px-0">
+          <div
+            id="seasonCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-interval="4000"
+          >
+            <div class="carousel-inner">
+              <!-- Season 1 -->
+              <div class="carousel-item active">
+                <div
+                  class="season-slide"
+                  style="
+                    background-image: url(&quot;images/Image\ Sep\ 26\,\ 2026\,\ 04_42_12\ AM.png&quot;);
+                  "
+                >
+                  <div class="season-overlay"></div>
+
+                  <div class="season-content">
+                    <span>NEW COLLECTION</span>
+
+                    <h2>NEW SEASON</h2>
+
+                    <a
+                      href="#men"
+                      class="season-btn"
+                      onclick="
+                        document
+                          .getElementById('men')
+                          .scrollIntoView({ behavior: 'smooth' });
+                        return false;
+                      "
+                    >
+                      EXPLORE NOW
+                      <span>→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Season 2 -->
+              <div class="carousel-item">
+                <div
+                  class="season-slide"
+                  style="
+                    background-image: url(&quot;images/pexels-yunustug-30805103.jpg&quot;);
+                  "
+                >
+                  <div class="season-overlay"></div>
+
+                  <div class="season-content">
+                    <span>NEW COLLECTION</span>
+
+                    <h2>NEW SEASON</h2>
+
+                    <a href="#" class="season-btn">
+                      EXPLORE NOW
+                      <span>→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Season 3 -->
+              <div class="carousel-item">
+                <div
+                  class="season-slide"
+                  style="
+                    background-image: url(&quot;images/pexels-ron-lach-9759922.jpg&quot;);
+                  "
+                >
+                  <div class="season-overlay"></div>
+
+                  <div class="season-content">
+                    <span>NEW COLLECTION</span>
+
+                    <h2>NEW SEASON</h2>
+
+                    <a href="#" class="season-btn">
+                      EXPLORE NOW
+                      <span>→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#seasonCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#seasonCarousel"
+                data-bs-slide-to="1"
+              ></button>
+
+              <button
+                type="button"
+                data-bs-target="#seasonCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- New Season Carousel End -->
+      <!-- Reviews Start -->
+      <section class="reviews-section reveal-section">
+        <div class="container">
+          <!-- Title -->
+          <div class="reviews-title">
+            <span></span>
+            <h2>REVIEWS</h2>
+            <span></span>
+          </div>
+
+          <div
+            id="reviewsCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+            data-bs-interval="2500"
+          >
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <!-- Review 1 -->
+                  <div class="col-12 col-md-6">
+                    <div class="review-card">
+                      <img
+                        src="images/T Image Sep 29, 2026, 03_11_06 AM.png"
+                        alt="Ayesha R."
+                        class="review-avatar"
+                      />
+
+                      <div class="review-content">
+                        <p>
+                          “Beautiful quality and fast delivery! Definitely
+                          coming back for more.”
+                        </p>
+
+                        <div class="review-bottom">
+                          <span class="stars">★★★★★</span>
+                          <span class="review-name">— Ayesha R.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Review 2 -->
+                  <div class="col-12 col-md-6 review-second">
+                    <div class="review-card">
+                      <img
+                        src="images/454a0261-c7b6-48e3-ae7e-7a76461e3449.png"
+                        alt="Rahim S."
+                        class="review-avatar"
+                      />
+
+                      <div class="review-content">
+                        <p>
+                          “Love the fit and the fabric. Perfect for everyday
+                          wear.”
+                        </p>
+
+                        <div class="review-bottom">
+                          <span class="stars">★★★★★</span>
+                          <span class="review-name">— Rahim S.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <!-- Review 3 -->
+                  <div class="col-12 col-md-6">
+                    <div class="review-card">
+                      <img
+                        src="images/PT Image Sep 29, 2026, 03_11_06 AM.png"
+                        alt="Nadia K."
+                        class="review-avatar"
+                      />
+
+                      <div class="review-content">
+                        <p>
+                          “The quality is amazing and the packaging was
+                          beautiful.”
+                        </p>
+
+                        <div class="review-bottom">
+                          <span class="stars">★★★★★</span>
+                          <span class="review-name">— Nadia K.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Review 4 -->
+                  <div class="col-12 col-md-6 review-second">
+                    <div class="review-card">
+                      <img
+                        src="images/Sep 29, 2026, 03_11_06 AM.png"
+                        alt="Daniel M."
+                        class="review-avatar"
+                      />
+
+                      <div class="review-content">
+                        <p>
+                          “Great style, comfortable fit and very quick
+                          delivery.”
+                        </p>
+
+                        <div class="review-bottom">
+                          <span class="stars">★★★★★</span>
+                          <span class="review-name">— Daniel M.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-6">
+                    <div class="review-card">
+                      <img
+                        src="images/T Image Sep 29, 2026, 03_11_06 AM.png"
+                        alt="Ayesha R."
+                        class="review-avatar"
+                      />
+
+                      <div class="review-content">
+                        <p>
+                          “Beautiful quality and fast delivery! Definitely
+                          coming back for more.”
+                        </p>
+
+                        <div class="review-bottom">
+                          <span class="stars">★★★★★</span>
+                          <span class="review-name">— Ayesha R.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 review-second">
+                    <div class="review-card">
+                      <img
+                        src="images/pPT Image Sep 29, 2026, 03_11_06 AM.png"
+                        alt="Nadia K."
+                        class="review-avatar"
+                      />
+
+                      <div class="review-content">
+                        <p>
+                          “The quality is amazing and the packaging was
+                          beautiful.”
+                        </p>
+
+                        <div class="review-bottom">
+                          <span class="stars">★★★★★</span>
+                          <span class="review-name">— Nadia K.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Reviews End -->
+      <!-- =========================
+     FOOTER START
+========================= -->
+
+      <footer class="site-footer reveal-section">
+        <!-- Newsletter -->
+        <div class="newsletter-section">
+          <div class="container">
+            <div class="row align-items-center g-4">
+              <div class="col-12 col-lg-5">
+                <div class="newsletter-content">
+                  <div class="newsletter-icon">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+
+                  <div>
+                    <h3>Subscribe to our newsletter</h3>
+
+                    <p>Get the latest updates, offers and style inspiration.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-7">
+                <form class="newsletter-form" id="newsletterForm">
+                  <input
+                    type="email"
+                    id="newsletterEmail"
+                    class="form-control"
+                    placeholder="Your email address"
+                    required
+                  />
+
+                  <button type="submit" id="newsletterBtn">Subscribe</button>
+                </form>
+
+                <p class="newsletter-message" id="newsletterMessage"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="footer-contact" id="contact">
+          <div class="container">
+            <div class="row g-5">
+              <!-- Contact Information -->
+              <div class="col-12 col-lg-5">
+                <div class="footer-info">
+                  <h3>Get in touch</h3>
+
+                  <p>
+                    Have a question, suggestion or need help with your order?
+                    Send us a message and our team will get back to you.
+                  </p>
+
+                  <div class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:ikhtiazsayed@gmail.com">
+                      ikhtiazsayed@gmail.com
+                    </a>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <a href="tel:+8801608247454"> 01608247454 </a>
+                  </div>
+
+                  <div class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <span>Dhaka, Bangladesh</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Contact Form -->
+              <div class="col-12 col-lg-7">
+                <div class="contact-form-wrapper">
+                  <h3>Contact us</h3>
+
+                  <form class="contact-form">
+                    <div class="row g-3">
+                      <!-- Name -->
+                      <div class="col-12 col-md-6">
+                        <label for="name"> Your Name </label>
+
+                        <input
+                          type="text"
+                          id="name"
+                          class="form-control"
+                          placeholder="Enter your name"
+                          required
+                        />
+                      </div>
+
+                      <!-- Email -->
+                      <div class="col-12 col-md-6">
+                        <label for="email"> Email Address </label>
+
+                        <input
+                          type="email"
+                          id="email"
+                          class="form-control"
+                          placeholder="Enter your email"
+                          required
+                        />
+                      </div>
+
+                      <!-- Subject -->
+                      <div class="col-12">
+                        <label for="subject"> Subject </label>
+
+                        <input
+                          type="text"
+                          id="subject"
+                          class="form-control"
+                          placeholder="What can we help you with?"
+                        />
+                      </div>
+
+                      <!-- Message -->
+                      <div class="col-12">
+                        <label for="message"> Message </label>
+
+                        <textarea
+                          id="message"
+                          class="form-control"
+                          rows="5"
+                          placeholder="Write your message here..."
+                          required
+                        ></textarea>
+                      </div>
+
+                      <!-- Button -->
+                      <div class="col-12">
+                        <button
+                          type="submit"
+                          class="contact-submit"
+                          id="contactSubmit"
+                        >
+                          SEND MESSAGE
+                          <span>→</span>
+                        </button>
+
+                        <p class="contact-message" id="contactMessage"></p>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom-inner">
+              <p>© 2026 Luma. All rights reserved.</p>
+
+              <div class="footer-links">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#aboutModal">
+                  About
+                </a>
+
+                <span>|</span>
+
+                <a href="#contact">Contact</a>
+
+                <span>|</span>
+
+                <a href="#" data-bs-toggle="modal" data-bs-target="#faqModal">
+                  FAQ
+                </a>
+              </div>
+
+              <div class="social-links">
+                <a href="#" aria-label="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                  <i class="bi bi-pinterest"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- =========================
+     FOOTER END
+========================= -->
+    </main>
+    <!-- =========================
+     ABOUT MODAL
+========================= -->
+
+    <div
+      class="modal fade luma-modal"
+      id="aboutModal"
+      tabindex="-1"
+      aria-labelledby="aboutModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="modal-eyebrow">ABOUT LUMA</span>
+              <h2 class="modal-title" id="aboutModalLabel">
+                Style made simple.
+              </h2>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <p class="modal-intro">
+              LUMA is a modern clothing brand focused on creating timeless,
+              effortless and everyday fashion for people who value simplicity
+              and personal style.
+            </p>
+
+            <div class="about-grid">
+              <div class="about-item">
+                <i class="bi bi-stars"></i>
+
+                <div>
+                  <h4>Our Style</h4>
+                  <p>
+                    Clean silhouettes, modern essentials and versatile pieces
+                    designed for everyday wear.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-item">
+                <i class="bi bi-heart"></i>
+
+                <div>
+                  <h4>Our Philosophy</h4>
+                  <p>
+                    We believe good fashion should feel comfortable, personal
+                    and effortless.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-item">
+                <i class="bi bi-bag"></i>
+
+                <div>
+                  <h4>Our Collection</h4>
+                  <p>
+                    From everyday essentials to seasonal pieces, LUMA brings
+                    together style and functionality.
+                  </p>
+                </div>
+              </div>
+
+              <div class="about-item">
+                <i class="bi bi-arrow-repeat"></i>
+
+                <div>
+                  <h4>Always Evolving</h4>
+                  <p>
+                    New collections and fresh ideas keep our style moving
+                    forward with you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="modal-action-btn"
+              data-bs-dismiss="modal"
+              onclick="
+                setTimeout(function () {
+                  document
+                    .getElementById('men')
+                    .scrollIntoView({ behavior: 'smooth' });
+                }, 300)
+              "
+            >
+              CONTINUE SHOPPING
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+     FAQ MODAL
+========================= -->
+
+    <div
+      class="modal fade luma-modal"
+      id="faqModal"
+      tabindex="-1"
+      aria-labelledby="faqModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span class="modal-eyebrow">LUMA FAQ</span>
+
+              <h2 class="modal-title" id="faqModalLabel">
+                Frequently asked questions.
+              </h2>
+            </div>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="accordion luma-accordion" id="faqAccordion">
+              <!-- FAQ 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqOne"
+                    aria-expanded="true"
+                    aria-controls="faqOne"
+                  >
+                    How can I place an order?
+                  </button>
+                </h2>
+
+                <div
+                  id="faqOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Select your preferred product and follow the available
+                    ordering options. Our team can also assist you through the
+                    contact section.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqTwo"
+                    aria-expanded="false"
+                    aria-controls="faqTwo"
+                  >
+                    How can I contact LUMA?
+                  </button>
+                </h2>
+
+                <div
+                  id="faqTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    You can contact us by email at
+                    <a href="mailto:ikhtiazsayed@gmail.com">
+                      ikhtiazsayed@gmail.com
+                    </a>
+                    or call
+                    <a href="tel:+8801608247454"> 01608247454 </a>.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqThree"
+                    aria-expanded="false"
+                    aria-controls="faqThree"
+                  >
+                    Do you offer new collections?
+                  </button>
+                </h2>
+
+                <div
+                  id="faqThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes. New seasonal collections and selected arrivals are
+                    featured throughout the website.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqFour"
+                    aria-expanded="false"
+                    aria-controls="faqFour"
+                  >
+                    Where is LUMA based?
+                  </button>
+                </h2>
+
+                <div
+                  id="faqFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    LUMA is based in Dhaka, Bangladesh.
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqFive"
+                    aria-expanded="false"
+                    aria-controls="faqFive"
+                  >
+                    How can I stay updated with LUMA?
+                  </button>
+                </h2>
+
+                <div
+                  id="faqFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Subscribe to our newsletter to receive updates, offers and
+                    style inspiration.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="modal-action-btn"
+              data-bs-dismiss="modal"
+            >
+              CLOSE
+              <span>×</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+     CART OFFCANVAS
+========================================================= -->
+    <div
+      class="offcanvas offcanvas-end luma-cart"
+      tabindex="-1"
+      id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel"
+    >
+      <!-- CART HEADER -->
+      <div class="offcanvas-header">
+        <div>
+          <span class="cart-eyebrow">LUMA SHOPPING BAG</span>
+
+          <h3 id="cartOffcanvasLabel">Your Cart</h3>
+        </div>
+
+        <button
+          type="button"
+          class="cart-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        >
+          ×
+        </button>
+      </div>
+
+      <!-- CART BODY -->
+      <div class="offcanvas-body">
+        <!-- EMPTY CART -->
+        <div class="cart-empty" id="cartEmpty">
+          <div class="cart-empty-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+
+          <h4>Your cart is empty</h4>
+
+          <p>
+            Discover our latest styles and add something you love to your
+            shopping bag.
+          </p>
+
+          <button
+            type="button"
+            class="cart-shop-btn"
+            onclick="
+              document.getElementById('cartOffcanvas').classList.remove('show');
+              document.body.classList.remove('offcanvas-backdrop');
+              document.body.style.overflow = '';
+
+              setTimeout(function () {
+                document
+                  .getElementById('trendingnow')
+                  .scrollIntoView({ behavior: 'smooth' });
+              }, 300);
+            "
+          >
+            CONTINUE SHOPPING
+
+            <span> → </span>
+          </button>
+        </div>
+
+        <!-- CART ITEMS -->
+        <div class="cart-items" id="cartItems"></div>
+
+        <!-- UNDO MESSAGE -->
+        <div class="cart-undo" id="cartUndo">
+          <span> Item removed from cart </span>
+
+          <button type="button" id="undoRemove">UNDO</button>
+        </div>
+      </div>
+    </div>
+    <!-- =========================================
+     LUMA ACCOUNT MODAL
+========================================= -->
+
+    <div class="account-modal" id="accountModal">
+      <div class="account-modal-overlay"></div>
+
+      <div class="account-modal-box">
+        <!-- Close -->
+        <button
+          type="button"
+          class="account-modal-close"
+          id="closeAccountModal"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+        <!-- Header -->
+        <div class="account-modal-header">
+          <div class="account-avatar">
+            <i class="fa-regular fa-user"></i>
+          </div>
+
+          <div>
+            <span>WELCOME TO LUMA</span>
+            <h2>My Account</h2>
+          </div>
+        </div>
+
+        <!-- Account Information -->
+        <div class="account-information">
+          <div class="account-info-item">
+            <div class="account-info-icon">
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div>
+              <small>NAME</small>
+              <p id="accountUserName">Guest User</p>
+            </div>
+          </div>
+
+          <div class="account-info-item">
+            <div class="account-info-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <div>
+              <small>EMAIL</small>
+              <p id="accountUserEmail">guest@luma.com</p>
+            </div>
+          </div>
+
+          <div class="account-info-item">
+            <div class="account-info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div>
+              <small>PHONE</small>
+              <p id="accountUserPhone">Not added</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edit Profile -->
+        <button type="button" class="account-edit-btn" id="editAccountBtn">
+          EDIT PROFILE
+          <span>→</span>
+        </button>
+        <!-- Edit Profile Form -->
+        <div class="account-edit-form" id="accountEditForm">
+          <div class="edit-form-header">
+            <span>ACCOUNT INFORMATION</span>
+            <h3>Edit Profile</h3>
+          </div>
+
+          <div class="edit-form-group">
+            <label for="editName">NAME</label>
+
+            <input
+              type="text"
+              id="editName"
+              placeholder="Enter your name"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="edit-form-group">
+            <label for="editEmail">EMAIL</label>
+
+            <input
+              type="email"
+              id="editEmail"
+              placeholder="Enter your email"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="edit-form-group">
+            <label for="editPhone">PHONE</label>
+
+            <input
+              type="tel"
+              id="editPhone"
+              placeholder="Enter your phone number"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="edit-form-actions">
+            <button
+              type="button"
+              class="edit-cancel-btn"
+              id="cancelEditProfile"
+            >
+              CANCEL
+            </button>
+
+            <button type="button" class="edit-save-btn" id="saveAccountProfile">
+              SAVE CHANGES
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========================================
+     LUMA LOGIN / SIGN UP MODAL
+========================================= -->
+
+    <div class="auth-modal" id="authModal">
+      <div class="auth-modal-overlay"></div>
+
+      <div class="auth-modal-box">
+        <!-- Close -->
+        <button
+          type="button"
+          class="auth-close"
+          id="closeAuthModal"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+        <!-- LOGIN -->
+        <div class="auth-form auth-login-form">
+          <div class="auth-header">
+            <span>WELCOME BACK</span>
+
+            <h2>Login</h2>
+
+            <p>Sign in to continue to your Luma account.</p>
+          </div>
+
+          <form id="loginForm">
+            <div class="auth-input-group">
+              <label for="loginEmail">EMAIL</label>
+
+              <input
+                type="email"
+                id="loginEmail"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="auth-input-group">
+              <label for="loginPassword">PASSWORD</label>
+
+              <div class="password-wrapper">
+                <input
+                  type="password"
+                  id="loginPassword"
+                  placeholder="Enter your password"
+                  autocomplete="current-password"
+                  required
+                />
+
+                <button
+                  type="button"
+                  class="password-toggle"
+                  data-target="loginPassword"
+                  aria-label="Show password"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <p class="auth-message" id="loginMessage"></p>
+
+            <button type="submit" class="auth-submit-btn">
+              LOGIN
+              <span>→</span>
+            </button>
+          </form>
+
+          <div class="auth-switch">
+            <span>Don't have an account?</span>
+
+            <button type="button" id="showSignup">SIGN UP</button>
+          </div>
+        </div>
+
+        <!-- SIGN UP -->
+        <div class="auth-form auth-signup-form">
+          <div class="auth-header">
+            <span>JOIN LUMA</span>
+
+            <h2>Create Account</h2>
+
+            <p>Create your account and start shopping with us.</p>
+          </div>
+
+          <form id="signupForm">
+            <div class="auth-input-group">
+              <label for="signupName">FULL NAME</label>
+
+              <input
+                type="text"
+                id="signupName"
+                placeholder="Enter your name"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="auth-input-group">
+              <label for="signupEmail">EMAIL</label>
+
+              <input
+                type="email"
+                id="signupEmail"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="auth-input-group">
+              <label for="signupPassword">PASSWORD</label>
+
+              <div class="password-wrapper">
+                <input
+                  type="password"
+                  id="signupPassword"
+                  placeholder="Create a password"
+                  autocomplete="new-password"
+                  required
+                />
+
+                <button
+                  type="button"
+                  class="password-toggle"
+                  data-target="signupPassword"
+                  aria-label="Show password"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="auth-input-group">
+              <label for="signupConfirmPassword">CONFIRM PASSWORD</label>
+
+              <div class="password-wrapper">
+                <input
+                  type="password"
+                  id="signupConfirmPassword"
+                  placeholder="Confirm your password"
+                  autocomplete="new-password"
+                  required
+                />
+
+                <button
+                  type="button"
+                  class="password-toggle"
+                  data-target="signupConfirmPassword"
+                  aria-label="Show password"
+                >
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <p class="auth-message" id="signupMessage"></p>
+
+            <button type="submit" class="auth-submit-btn">
+              CREATE ACCOUNT
+              <span>→</span>
+            </button>
+          </form>
+
+          <div class="auth-switch">
+            <span>Already have an account?</span>
+
+            <button type="button" id="showLogin">LOGIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =========================================
+     LUMA MY ORDERS MODAL
+========================================= -->
+
+    <div class="orders-modal" id="ordersModal">
+      <div class="orders-modal-overlay"></div>
+
+      <div class="orders-modal-box">
+        <!-- Close -->
+        <button
+          type="button"
+          class="orders-modal-close"
+          id="closeOrdersModal"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+        <!-- Header -->
+        <div class="orders-modal-header">
+          <div class="orders-modal-icon">
+            <i class="fa-solid fa-box"></i>
+          </div>
+
+          <div>
+            <span>LUMA SHOPPING</span>
+            <h2>My Orders</h2>
+          </div>
+        </div>
+
+        <!-- Orders Content -->
+        <div class="orders-content" id="ordersContent">
+          <!-- Orders will be inserted by JavaScript -->
+        </div>
+      </div>
+    </div>
+    <!-- SETTINGS MODAL -->
+    <!-- SETTINGS MODAL -->
+    <div class="settings-overlay" id="settingsOverlay">
+      <div class="settings-panel">
+        <button
+          type="button"
+          class="settings-close"
+          id="closeSettings"
+          aria-label="Close settings"
+        >
+          ×
+        </button>
+
+        <div class="settings-header">
+          <span>LUMA SHOPPING</span>
+          <h2>Settings</h2>
+        </div>
+
+        <div class="settings-section">
+          <h4>Appearance</h4>
+
+          <div class="settings-options">
+            <button type="button" class="settings-option" data-theme="light">
+              <i class="fa-solid fa-sun"></i>
+              <span>Light</span>
+            </button>
+
+            <button type="button" class="settings-option" data-theme="dark">
+              <i class="fa-solid fa-moon"></i>
+              <span>Dark</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h4>Currency</h4>
+
+          <div class="settings-options">
+            <button type="button" class="settings-option" data-currency="USD">
+              USD
+            </button>
+
+            <button type="button" class="settings-option" data-currency="BDT">
+              BDT
+            </button>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h4>Notifications</h4>
+
+          <label class="settings-toggle-row">
+            <span>Order Notifications</span>
+            <input type="checkbox" id="orderNotifications" />
+          </label>
+
+          <label class="settings-toggle-row">
+            <span>Wishlist Notifications</span>
+            <input type="checkbox" id="wishlistNotifications" />
+          </label>
+        </div>
+
+        <button type="button" class="settings-reset" id="resetSettings">
+          RESET SETTINGS
+        </button>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script>
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $("#pageLoader").addClass("loaded");
+        }, 500);
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        function revealSections() {
+          $(".reveal-section").each(function () {
+            let sectionTop = $(this).offset().top;
+            let scrollTop = $(window).scrollTop();
+            let windowHeight = $(window).height();
+
+            if (scrollTop + windowHeight - 100 > sectionTop) {
+              $(this).addClass("show");
+            }
+          });
+        }
+
+        revealSections();
+
+        $(window).on("scroll", function () {
+          revealSections();
+        });
+      });
+    </script>
+    <script>
+      $(window).on("load", function () {
+        $("img").each(function () {
+          $(this).addClass("loaded");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#newsletterForm").on("submit", function (e) {
+          e.preventDefault();
+
+          let email = $("#newsletterEmail").val().trim().toLowerCase();
+          let button = $("#newsletterBtn");
+          let message = $("#newsletterMessage");
+
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!emailPattern.test(email)) {
+            message.text("Please enter a valid email address.");
+            message.removeClass("success").addClass("error");
+            return;
+          }
+
+          let subscribers = JSON.parse(
+            localStorage.getItem("lumaSubscribers") || "[]",
+          );
+
+          if (subscribers.includes(email)) {
+            message.text("This email is already subscribed.");
+            message.removeClass("success").addClass("error");
+            return;
+          }
+
+          button.prop("disabled", true);
+          button.text("SUBSCRIBING...");
+          message.text("");
+
+          setTimeout(function () {
+            subscribers.push(email);
+
+            localStorage.setItem(
+              "lumaSubscribers",
+              JSON.stringify(subscribers),
+            );
+
+            message.text("Thank you! You have successfully subscribed.");
+            message.removeClass("error").addClass("success");
+
+            $("#newsletterEmail").val("");
+
+            button.prop("disabled", false);
+            button.text("SUBSCRIBE");
+          }, 1200);
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#contactForm").on("submit", function (e) {
+          e.preventDefault();
+
+          let name = $("#name").val().trim();
+          let email = $("#email").val().trim();
+          let subject = $("#subject").val().trim();
+          let messageText = $("#message").val().trim();
+
+          let button = $("#contactSubmit");
+          let message = $("#contactMessage");
+
+          // Email validation
+          let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          // Check required fields
+          if (name === "" || email === "" || messageText === "") {
+            message.text("Please fill in all required fields.");
+            message.removeClass("success").addClass("error");
+            return;
+          }
+
+          // Check email format
+          if (!emailPattern.test(email)) {
+            message.text("Please enter a valid email address.");
+            message.removeClass("success").addClass("error");
+            return;
+          }
+
+          // Loading state
+          button.prop("disabled", true);
+          button.html("SENDING... <span>→</span>");
+          message.text("");
+
+          // Simulate form processing
+          setTimeout(function () {
+            message.text("Thank you! Your message has been received.");
+            message.removeClass("error").addClass("success");
+
+            // Clear form
+            $("#contactForm")[0].reset();
+
+            // Reset button
+            button.prop("disabled", false);
+            button.html("SEND MESSAGE <span>→</span>");
+          }, 1500);
+        });
+      });
+    </script>
+  </body>
+</html>
