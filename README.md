@@ -10,6 +10,8 @@ The project combines Bootstrap's responsive grid system with custom CSS, JavaScr
 
 👉 <a href="https://sayedikhtiazahmed.github.io/luma-fashion-clothing-brand/">View Live Website</a>
 
+<img width="1896" height="1085" alt="image" src="https://github.com/user-attachments/assets/333802b9-bbaf-4067-8769-93b5fad29e97" />
+
 ---
 
 ## 🔗 GitHub Repository
@@ -18,6 +20,8 @@ Explore the complete source code, project files, and documentation:
 
 👉 <a href="https://github.com/SayedIkhtiazAhmed/luma-fashion-clothing-brand">
 View GitHub Repository </a>
+
+<img width="1843" height="903" alt="image" src="https://github.com/user-attachments/assets/ad44647e-b214-4390-8288-6eadf00a5e69" />
 
 ---
 
@@ -239,6 +243,8 @@ The form allows users to enter their information and message through the website
 
 The interface includes validation and user-friendly form interactions.
 
+<img width="1901" height="845" alt="image" src="https://github.com/user-attachments/assets/c396e8a7-63fe-4d44-82a5-a4b5a60dc7a1" />
+
 ---
 
 ### ❓ Q&A
@@ -247,6 +253,8 @@ A dedicated Q&A section was included to provide answers to common questions rela
 
 The section was designed to make important information easier for visitors to find.
 
+<img width="907" height="757" alt="image" src="https://github.com/user-attachments/assets/d6640e21-f159-4121-9980-ccf823c19e8e" />
+
 ---
 
 ### ℹ️ About Us Popup
@@ -254,6 +262,8 @@ The section was designed to make important information easier for visitors to fi
 An interactive About Us popup was implemented to provide information about the LUMA fashion clothing brand.
 
 The popup allows visitors to access brand information without leaving the current page.
+
+<img width="942" height="702" alt="image" src="https://github.com/user-attachments/assets/29e98872-8ac5-4e3e-a29c-1eafbc07cc1e" />
 
 ---
 
